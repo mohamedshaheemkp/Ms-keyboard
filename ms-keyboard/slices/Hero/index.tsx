@@ -23,7 +23,6 @@ const Hero: FC<HeroProps> = ({ slice }) => {
         {/* canvas goes here */}
       </div>
     <div className="hero-content">
-    </div>
 
 
       
@@ -35,6 +34,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
       {slice.primary.buy_button_text}
       <span className = "group-hover:translate-x-1 transition">{">"}</span>
     </button>
+        </div>
     </section>
   );
 };
