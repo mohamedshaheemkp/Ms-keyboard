@@ -2,6 +2,7 @@ import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { Span } from "next/dist/trace";
+import { Bounded } from "@/components/Bounded";
 
 /**
  * Props for `Hero`.
@@ -23,12 +24,14 @@ const Hero: FC<HeroProps> = ({ slice }) => {
         {/* canvas goes here */}
       </div>
     <div className="hero-content absolute inset-x-0 top-0 h-dvh ">
+      <Bounded fullwidth > 
 
     <PrismicRichText field={slice.primary.heading} components={{
       heading1: ({ children }) => (
         <h1 className="hero-heading font-black-slanted text-6xl leading-[0.8] uppercase sm:text-7xl lg:text-8xl ">{children}</h1>
       )
     }} />
+      </Bounded>
     <div className="max-w-md">
       <PrismicRichText field={slice.primary.body} components={{
         heading2: ({ children }) => (
