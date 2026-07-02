@@ -1,0 +1,5 @@
+anthropic.claude-code
+bradlc.vscode-tailwindcss
+esbenp.prettier-vscode
+openai.chatgpt
+ritwickdey.liveserver
